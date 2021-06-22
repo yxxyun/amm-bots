@@ -1,0 +1,58 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    //"cwd": "${workspaceFolder}",
+    "tasks": [
+        {
+            "label": "BuildLinux64",
+            "type": "shell",
+            "command": "go build -ldflags='-s -w'",
+            "options": {
+                "cwd": "${fileDirname}",
+                "env": {
+                    "GOOS": "linux",
+                    "GOARCH": "amd64"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "BuildWin64",
+            "type": "shell",
+            "command": "go build -ldflags='-s -w'",
+            "options": {
+                "cwd": "${fileDirname}",
+                "env": {
+                    "GOOS": "windows",
+                    "GOARCH": "amd64"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "BuildWin32",
+            "type": "shell",
+            "command": "go build -ldflags='-s -w'",
+            "options": {
+                "cwd": "${fileDirname}",
+                "env": {
+                    "GOOS": "windows",
+                    "GOARCH": "386"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "ModInit",
+            "type": "shell",
+            "command": "go mod init"
+        },
+        {
+            "label": "ModTidy",
+            "type": "shell",
+            "command": "go mod tidy",
+            "problemMatcher": []
+        }
+    ]
+}
