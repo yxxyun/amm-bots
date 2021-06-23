@@ -1,0 +1,9 @@
+account: rPiz8o5RyTMTCaRoPZHNEjV1HDQePL7G8w
+seed: saDyZz3YohXPPw6LPcq249aXmYeBF
+baseToken: 1000/XRP
+quoteToken: 867/USD/rPjwHdi8kfVimPGVPMMjKpUr65WEpCtmFL
+server: wss://s.altnet.rippletest.net:51233
+minPrice: 0.7
+maxPrice: 1.0
+priceGap: 0.005
+expandInventory: 5
