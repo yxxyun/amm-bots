@@ -172,7 +172,7 @@ func (b *ConstProductBot) maintainOrder() {
 				neworderladder[k] = v
 				//b.createOrder(v.Ladder, utils.ToggleSide(v.Side))
 				delete(b.ladderMap, k)
-				logrus.Info("delete #", k)
+				logrus.Info("OfferFulfilled #", k)
 			}
 
 		}
